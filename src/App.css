@@ -1,0 +1,55 @@
+.App {
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: "markdown preview"; 
+    place-items: center;
+  }
+
+  .markdown, .preview{
+    color: #F2E5E5;
+    margin: 2vw;
+    height: 91vh;
+    width: 42vw;
+  }
+
+  .markdown { 
+    margin-right: 0.1vw;
+    grid-area: markdown; 
+}
+
+  .preview { 
+    grid-area: preview; 
+    margin-left: 0.1vw;
+    resize: none;
+}
+
+.markdown-txt, .preview-txt{
+  display: block;
+  width: 98%;
+  height: 93%;
+  font-size: 1.5rem;
+  padding: 5px;
+  background-color: #F2E5E5;
+  border: 5px solid #2B3A55; 
+  border-radius: 15px;
+
+}
+
+.markdown-txt{
+  resize: none;
+}
+
+.preview-txt{
+  word-wrap: break-word;
+  overflow-y: scroll;
+  color: black;
+
+}
+
+textarea{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif
+}
